@@ -1,0 +1,1 @@
+Making a snake game to learn how to use raylib and learn how to use C more.
