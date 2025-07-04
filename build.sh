@@ -7,7 +7,7 @@ RAYLIB_LIB="/usr/local/include/raylib/src"  # Path to libraylib.a
 OUTPUT="snakegame"
 
 # Compile command for static linking
-$CC src/*.c -I$RAYLIB_INCLUDE -L$RAYLIB_LIB -l:libraylib.a \
+$CC src/*.cpp -I$RAYLIB_INCLUDE -L$RAYLIB_LIB -l:libraylib.a \
     -lGL -lm -lpthread -ldl -lX11 -o $OUTPUT
 
 if [ $? -eq 0 ]; then
