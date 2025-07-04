@@ -94,7 +94,12 @@ int main(){
 
         if (snake[0].x < 0 || snake[0].x > WIDTH || snake[0].y < 0 || snake[0].y > HEIGHT) return 0;
         
-        
+        for (int i = 1; i < snakeSize; i++) {
+            if (snake[0].x == snake[i].x && snake[0].y == snake[i].y) {
+                return 0;
+            }
+        }
+
         if (ballEaten){
             ballEaten = 0;
             ballX = GetRandomValue(0, WIDTH);
